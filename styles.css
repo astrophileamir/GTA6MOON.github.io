@@ -24,7 +24,7 @@ header nav ul {
     display: flex;
     justify-content: center;
     margin: 0;
-    padding: 0;
+    padding: 10px 0;
 }
 
 header nav ul li {
@@ -39,48 +39,48 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #007bff;
+    color: #00ff00; /* Bright green for hover effect */
 }
 
 /* Hero Section */
 .hero {
     background: url('your-banner-image.png') no-repeat center center/cover;
     height: 100vh;
-    color: white;
-    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    margin-top: 70px; /* Prevent overlap with fixed navbar */
-    box-sizing: border-box; /* Ensure padding doesn't break layout */
+    margin-top: 70px;
+    box-sizing: border-box;
 }
 
 .hero-content {
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for text */
     padding: 20px 30px;
     border-radius: 10px;
-    display: inline-block; /* Centered content block */
-    max-width: 90%; /* Restrict content width on mobile */
+    display: inline-block;
+    max-width: 80%; /* Restrict content width */
+    text-align: center;
 }
 
 .hero-content h1 {
-    font-size: 3.5em;
+    font-size: 3em;
     margin-bottom: 15px;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8); /* Stronger text shadow */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Improved text shadow */
     font-weight: bold;
+    color: #ffffff; /* White text */
 }
 
 .hero-content p {
     font-size: 1.5em;
     margin-bottom: 20px;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8); /* Stronger text shadow */
+    color: #ffffff;
     line-height: 1.5;
 }
 
 .hero-content .btn {
-    background: #007bff;
+    background: #00ff00;
     color: white;
     padding: 12px 24px;
     border: none;
@@ -92,7 +92,7 @@ header nav ul li a:hover {
 }
 
 .hero-content .btn:hover {
-    background: #0056b3;
+    background: #008000;
 }
 
 /* Section Styles */
@@ -113,22 +113,6 @@ section p {
     margin-bottom: 10px;
 }
 
-/* Buttons */
-button, .btn {
-    font-size: 1em;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background: #007bff;
-    color: white;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-button:hover, .btn:hover {
-    background: #0056b3;
-}
-
 /* Footer */
 footer {
     background: #000;
@@ -142,21 +126,16 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .hero {
-        height: 100vh;
-        background-size: cover; /* Ensure full cover */
-    }
-
     .hero-content {
-        max-width: 95%; /* Adjust for smaller screens */
+        max-width: 90%;
     }
 
     .hero-content h1 {
-        font-size: 2.5em;
+        font-size: 2.2em;
     }
 
     .hero-content p {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     .hero-content .btn {
@@ -167,11 +146,11 @@ footer {
 
 @media (max-width: 480px) {
     .hero-content h1 {
-        font-size: 2em;
+        font-size: 1.8em;
     }
 
     .hero-content p {
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
     .hero-content .btn {
