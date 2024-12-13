@@ -15,8 +15,8 @@
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#contract">Contract</a></li>
                 <li><a href="#community">Community</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -42,13 +42,22 @@
             </ul>
         </section>
         
+        <section id="contract">
+            <h2>Contract Address</h2>
+            <p>Here is the official contract address for <strong>$GTA6MOON</strong>:</p>
+            <p class="contract-address">9KRKbbvnpJPccBsBbau2TMohoi6HEu7CZVFYNfLtmoon</p>
+            <button class="copy-btn" onclick="copyAddress()">Copy Address</button>
+            <p>
+                Check out our token on <a href="https://dexscreener.com/solana/9krkbbvnpjpccbsbbau2tmohoi6heu7czvfynfltmoon" target="_blank">DexScreener</a>.
+            </p>
+        </section>
+        
         <section id="community">
             <h2>Join Our Community</h2>
             <p>Connect with us on social media and be part of the journey:</p>
             <ul>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Telegram</a></li>
-                <li><a href="#">Discord</a></li>
+                <li><a href="https://t.me/GTA6MOON" target="_blank">Telegram</a></li>
+                <li><a href="https://x.com/Gta6Moon" target="_blank">Twitter</a></li>
             </ul>
         </section>
     </main>
@@ -56,5 +65,14 @@
     <footer>
         <p>© 2024 GTAMoonToken. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        function copyAddress() {
+            const address = "9KRKbbvnpJPccBsBbau2TMohoi6HEu7CZVFYNfLtmoon";
+            navigator.clipboard.writeText(address).then(() => {
+                alert("Contract address copied to clipboard!");
+            });
+        }
+    </script>
 </body>
 </html>
