@@ -16,7 +16,8 @@ body, html {
 .hero {
     width: 100vw; /* Full viewport width */
     height: 100vh; /* Full viewport height */
-    background: url('your-banner-image.png') no-repeat center center/cover;
+    background: url('your-banner-image.png') no-repeat center center; /* Centered background */
+    background-size: cover; /* Ensure the image covers the screen */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,6 +26,7 @@ body, html {
     color: white;
     margin: 0; /* Remove any margin */
     padding: 0; /* Remove any padding */
+    overflow: hidden; /* Prevent any overflow issues */
 }
 
 /* Header */
@@ -60,11 +62,13 @@ header nav a:hover {
 .hero h1 {
     font-size: 3rem;
     margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Text shadow for better visibility */
 }
 
 .hero p {
     font-size: 1.5rem;
     margin: 10px 0;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
 
 .hero .btn {
@@ -76,6 +80,7 @@ header nav a:hover {
     font-size: 1rem;
     font-weight: bold;
     transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 20px;
 }
 
 .hero .btn:hover {
