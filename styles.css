@@ -13,15 +13,16 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background: rgba(0, 0, 0, 0.6);
-    position: absolute;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    position: fixed; /* Fix the header */
     top: 0;
     width: 100%;
     z-index: 1000;
+    color: white;
 }
 
 .logo img {
-    width: 80px;
+    width: 60px;
 }
 
 .nav-links {
@@ -41,6 +42,11 @@ body {
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00ff00;
 }
 
 /* Hero Section */
@@ -54,27 +60,31 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    margin-top: 70px; /* Prevent overlap with fixed navbar */
 }
 
 .hero-content h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
+    font-size: 3.5em;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .hero-content p {
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin-bottom: 20px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .hero-content .btn {
     background: #007bff;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border: none;
     text-decoration: none;
     border-radius: 5px;
     font-size: 1em;
     cursor: pointer;
+    transition: background 0.3s;
 }
 
 .hero-content .btn:hover {
@@ -86,10 +96,12 @@ main {
     text-align: center;
     padding: 20px;
     max-width: 800px;
-    margin: -100px auto 0 auto;
+    margin: -50px auto 0 auto;
     background: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2; /* Ensure it's above the hero section */
 }
 
 /* Footer */
