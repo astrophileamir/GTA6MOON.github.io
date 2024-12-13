@@ -9,11 +9,12 @@ body, html {
     line-height: 1.6;
     background-color: #f9f9f9;
     color: #333;
+    overflow-x: hidden;
 }
 
 /* Hero Section */
 .hero {
-    width: 100%;
+    width: 100vw; /* Full viewport width */
     height: 100vh; /* Full viewport height */
     background: url('your-banner-image.png') no-repeat center center/cover;
     display: flex;
@@ -22,11 +23,13 @@ body, html {
     align-items: center;
     text-align: center;
     color: white;
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
 }
 
 /* Header */
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     display: flex;
