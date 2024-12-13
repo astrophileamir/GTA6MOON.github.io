@@ -1,99 +1,73 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-/* Global Styles */
+/* General Styling */
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f7f8fc;
-    color: #333;
-    line-height: 1.6;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
 }
 
-/* Header Styles */
-.custom-header {
-    position: relative;
-    height: 400px;
-    background: url('header-background.webp') center center / cover no-repeat;
-}
-
-.header-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+/* Header */
+header {
+    background-image: url('your-banner-image.jpg'); /* Replace with the actual banner file name */
+    background-size: cover;
+    background-position: center;
     color: white;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    text-align: center;
+    padding: 20px 0;
 }
 
-.header-overlay .logo img {
-    max-width: 100px;
-    margin-bottom: 20px;
+header .logo img {
+    width: 80px;
+    margin-bottom: 10px;
 }
 
-.header-overlay nav ul {
+header nav ul {
+    list-style: none;
+    padding: 0;
     display: flex;
     justify-content: center;
     gap: 20px;
-    list-style: none;
 }
 
-.header-overlay nav ul li a {
-    text-decoration: none;
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
     color: white;
-    font-weight: 600;
-    padding: 5px 10px;
-    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.header-overlay nav ul li a:hover {
-    background: #005bb5;
-    border-radius: 5px;
+header nav ul li a:hover {
+    text-decoration: underline;
 }
 
 /* Hero Section */
 #hero {
+    text-align: center;
     padding: 100px 20px;
-    text-align: center;
-    background-color: #0073e6;
+    background-color: rgba(0, 0, 0, 0.7); /* Optional overlay effect */
     color: white;
 }
 
-#hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-#hero .cta-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #005bb5;
+#hero .btn {
+    background-color: #ff9800;
     color: white;
-    border: none;
-    border-radius: 5px;
     text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s ease-in-out;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
 }
 
-#hero .cta-btn:hover {
-    background: #004a99;
-}
-
-/* Footer */
-footer {
-    padding: 20px;
-    background: #333;
-    color: white;
-    text-align: center;
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    header {
+        text-align: center;
+        padding: 15px 0;
+    }
 }
