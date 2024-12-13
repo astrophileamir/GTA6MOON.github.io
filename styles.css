@@ -9,7 +9,7 @@ body, html {
     line-height: 1.6;
     background-color: #f9f9f9;
     color: #333;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Hero Section */
@@ -24,8 +24,6 @@ body, html {
     align-items: center;
     text-align: center;
     color: white;
-    margin: 0; /* Remove any margin */
-    padding: 0; /* Remove any padding */
     overflow: hidden; /* Prevent any overflow issues */
 }
 
@@ -39,6 +37,7 @@ header {
     padding: 10px 0;
     background: rgba(0, 0, 0, 0.6);
     z-index: 1000;
+    margin: 0;
 }
 
 header nav {
