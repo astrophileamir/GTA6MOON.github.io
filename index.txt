@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTAMoonToken - Revolutionizing Gaming Crypto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="custom-header">
+        <div class="header-overlay">
+            <div class="logo">
+                <img src="logo.png" alt="GTAMoonToken Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#roadmap">Roadmap</a></li>
+                    <li><a href="#contract">Contract</a></li>
+                    <li><a href="#community">Community</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Welcome to GTAMoonToken</h1>
+                <p>Revolutionizing the gaming world with cryptocurrency inspired by GTA 6.</p>
+                <a href="#about" class="cta-btn">Learn More</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <h2>About GTAMoonToken</h2>
+                <p>GTAMoonToken is designed for gamers and GTA 6 enthusiasts. Join our community and unlock exciting rewards.</p>
+            </div>
+        </section>
+
+        <!-- Roadmap Section -->
+        <section id="roadmap">
+            <div class="container">
+                <h2>Our Roadmap</h2>
+                <div class="roadmap-items">
+                    <div class="roadmap-item">
+                        <h3>Phase 1</h3>
+                        <p>Token launch and initial marketing.</p>
+                    </div>
+                    <div class="roadmap-item">
+                        <h3>Phase 2</h3>
+                        <p>Community building and partnerships.</p>
+                    </div>
+                    <div class="roadmap-item">
+                        <h3>Phase 3</h3>
+                        <p>Integration with gaming platforms.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contract Section -->
+        <section id="contract">
+            <div class="container">
+                <h2>Contract Address</h2>
+                <p>Official contract for <strong>$GTA6MOON</strong>: <span class="contract-address">9KRKbbvnpJPccBsBbau2TMohoi6HEu7CZVFYNfLtmoon</span></p>
+                <button onclick="copyAddress()">Copy Address</button>
+                <p><a href="https://dexscreener.com/solana/9krkbbvnpjpccbsbbau2tmohoi6heu7czvfynfltmoon" target="_blank">View on DexScreener</a></p>
+            </div>
+        </section>
+
+        <!-- Community Section -->
+        <section id="community">
+            <div class="container">
+                <h2>Join Our Community</h2>
+                <div class="community-links">
+                    <a href="https://t.me/GTA6MOON" target="_blank" class="btn">Telegram</a>
+                    <a href="https://x.com/Gta6Moon" target="_blank" class="btn">Twitter</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 GTAMoonToken. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function copyAddress() {
+            const address = "9KRKbbvnpJPccBsBbau2TMohoi6HEu7CZVFYNfLtmoon";
+            navigator.clipboard.writeText(address).then(() => alert("Address copied!"));
+        }
+    </script>
+</body>
+</html>
